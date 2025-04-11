@@ -1,0 +1,145 @@
+:root {
+    --green-dark: #283618;
+    --green-moss: #606c38;
+    --cream: #FEFAE0;
+    --yellow-earth: #DDA15E;
+    --tiger-eye: #BC6C25;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+    color: var(--green-dark);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h5 {
+    font-family: 'Merriweather', serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    max-width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.custom-navbar {
+    background-color: var(--green-moss);
+}
+
+.custom-navbar .nav-link {
+    color: var(--cream);
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--yellow-earth);
+}
+
+.furservice {
+    background-image: url('images/veteran-dog.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    position: relative;
+    color: var(--cream);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.furservice-overlay {
+    background-color: rgba(40, 54, 24, 0.7);
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: 0;
+}
+
+.intro-logo {
+    max-width: 25vh;
+    max-height: auto;
+}
+
+.furservice-home-image {
+    background-color: rgba(40, 54, 24, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.furservice-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+
+.btn-outline-primary {
+    border-color: var(--tiger-eye);
+    color: var(--tiger-eye);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--tiger-eye);
+    color: #fff;
+}
+
+footer {
+    background-color: var(--green-dark)!important;
+    font-size: 0.95rem;
+}
+
+footer i {
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: var(--yellow-earth);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--green-dark);
+    font-style: italic;
+}
+
+.furservice-buttons .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.furservice-buttons .btn-warning:hover {
+    background-color: #e5a04e;
+    border-color: #e5a04e;
+}
+
+.animate-fade {
+    animation: fadeInUp 1.2s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}  
