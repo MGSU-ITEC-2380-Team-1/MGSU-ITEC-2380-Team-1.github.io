@@ -45,6 +45,7 @@ h1, h2, h5 {
     color: var(--yellow-earth);
 }
 
+/* Home Page Specific Styles */
 .furservice {
     background-image: url('images/IntroVeteranAndServiceDog.webp');
     background-size: cover;
@@ -136,7 +137,7 @@ h1, h2, h5 {
     background-size: cover;
     background-position: center;
     filter: blur(8px) brightness(0.8);
-    transform: scale(1.1); /* Creates the zoomed-in effect */
+    transform: scale(1.1);
     z-index: 0;
 }
 
@@ -165,6 +166,171 @@ h1, h2, h5 {
 .btn-outline-primary:hover {
     background-color: var(--tiger-eye);
     color: #fff;
+}
+
+/* About Page Specific Styles */
+.about-banner {
+    background-image: url('images/AboutPageBanner.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    position: relative;
+    color: var(--cornsilk);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.about-overlay {
+    background-color: rgba(40, 54, 24, 0.7);
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: 0;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Enhanced Tab Styles */
+.nav-tabs .nav-link {
+    color: var(--green-dark)!important;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--tiger-eye)!important;
+    border-color: var(--tiger-eye)!important;
+    font-weight: 700;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(188, 108, 37, 0.2);
+}
+
+.tab-content {
+    background-color: #606c3825;
+}
+
+.fa-paw, .fa-heart {
+    color: var(--tiger-eye);
+}
+
+.tiger-border {
+    border-color: var(--tiger-eye)!important;
+}
+
+/* Enhanced Accordion Styles */
+.accordion-button {
+    font-size: 1.2rem;
+    padding: 1.25rem 1.5rem;
+    font-weight: 500;
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--tiger-eye);
+    background-color: rgba(221, 161, 94, 0.1);
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(221, 161, 94, 0.25);
+    border-color: var(--tiger-eye);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background: var(--tiger-eye);
+}
+
+.timeline-panel {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid;
+    border-color: var(--tiger-eye);
+}
+
+.bg-success {
+    background-color: var(--green-moss)!important;
+}
+
+/* About Page Responsive adjustments */
+@media (max-width: 768px) {
+    .about-banner {
+        min-height: 30vh;
+    }
+    
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-tabs .nav-link {
+        font-size: 1.05rem;
+        padding: 0.75rem 1.25rem;
+        margin: 0 0.25rem;
+    }
+
+    ul {
+        font-size: 1.1rem;
+    }
+
+    .card-body p {
+        font-size: 1.05rem;
+    }
+    
+    .accordion-button {
+        font-size: 1.1rem;
+        padding: 1rem 1.25rem;
+    }
+    
+    .accordion-body {
+        font-size: 1rem;
+        padding: 1.25rem;
+    }
+    
+    .timeline {
+        padding-left: 30px;
+    }
+    
+    .timeline-badge {
+        left: -15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
 
 footer {

@@ -24,3 +24,21 @@ The rights to all photos used belong to their original owners, and our team prod
 *Featured Veteran*
 > Source: https://www.observernews.net/2019/12/05/27469/<br/>
 > Direct Link: https://www.observernews.net/wp-content/uploads/2019/12/M8A1192.jpg
+
+**About Page:**
+
+*About Background Image*
+> Source: https://k9partnersforpatriots.com/service-dog-training-program/
+> Direct Link: https://k9partnersforpatriots.com/wp-content/uploads/2023/11/DSC06121-Edit-website.jpg
+
+*Staff Member 1*
+> Source: https://www.today.com/video/how-service-dogs-are-helping-veterans-cope-with-ptsd-125955653902
+> Direct Link: https://media-cldnry.s-nbcnews.com/image/upload/mpx/2704722219/2021_11/1636636921373_tdy_news_8a_kerry_veterans_service_dogs_211111_1920x1080-7innvx.jpg
+
+*Staff Member 2*
+> Source: https://nadoi.org/blogpost/1954262/421827/Do-You-Really-Want-to-Become-a-Service-Dog-Trainer
+> Direct Link: https://cdn.ymaws.com/nadoi.site-ym.com/resource/resmgr/images/notes/jeanne_hampl_with_sd.jpg
+
+*Staff Member 3*
+> Source: https://www.army.mil/article/79637/fueled_by_history_passion_son_of_immigrants_serves_in_u_s_army
+> Direct Link: https://api.army.mil/e2/c/images/2012/05/10/246794/original.jpg
