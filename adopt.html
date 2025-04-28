@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Adopt</title>
+        <link
+        rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Bootstrap CSS Import -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JavaScript Import -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome Import -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+	<body>
+	 <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/FurServiceLogo.png" alt="Thank You, Fur Your Service logo" class="d-inline-block align-text-top me-2">
+                Thank You, Fur Your Service
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="animals.html" class="nav-link">Service Animals</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="stories.html" class="nav-link">Veteran Stories</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="adopt.html" class="nav-link">Adopt</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div> <!-- Navbar List -->
+            </div> <!-- Navbar -->
+        </nav>
+     </header>
+	 <!--  -->
+     <section class="furservice text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="furservice-overlay">
+        </div> <!-- Intro Overlay -->
+        <div class="furservice-content container animate-fade">
+            <div class="d-flex flex-column">
+                <div>
+                    <h2 class="display-4 fw-bold mt-1">Interested in adopting?</h2>
+                    <p class="lead">Please fill out this form in order to apply if you're a veteran in need of a service animal!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+		<main id="main-content" class="container my-5">
+            <section class="text-center mb-4">
+			<div class="container">
+        <h1>Veteran & Dog Adoption Interest Form</h1>
+
+        <form action="#" method="POST">
+            <!-- Veteran Information Section -->
+            <div class="form-section">
+                <h2>Veteran Information</h2>
+                <label for="veteranName">Full Name:</label><br>
+                <input type="text" id="veteranName" name="veteranName" required><br>
+                
+                <label for="veteranEmail">Email Address:</label><br>
+                <input type="email" id="veteranEmail" name="veteranEmail" required><br>
+				
+				<label for="veteranPhone">Phone Number:</label><br>
+                <input type="text" id="veteranPhone" name="veteranPhone" required><br>
+                
+                <label for="militaryBranch">Branch of Service:</label>
+                <select id="militaryBranch" name="militaryBranch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Army">Army</option>
+                    <option value="Navy">Navy</option>
+                    <option value="Air Force">Air Force</option>
+                    <option value="Marines">Marines</option>
+                    <option value="Coast Guard">Coast Guard</option>
+                    <option value="National Guard">National Guard</option>
+                </select>
+            </div>
+
+            <!-- Dog Preferences Section -->
+            <div class="form-section">
+                <h2>Dog Preferences</h2>
+                <label for="dogSize">Preferred Dog Size:</label>
+                <select id="dogSize" name="dogSize" required>
+                    <option value="">Select Size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Any">Any</option>
+                </select>
+
+                <label for="dogBreed">Preferred Dog Breed:</label>
+                <input type="text" id="dogBreed" name="dogBreed" placeholder="e.g. Labrador, German Shepherd" required>
+
+                <label for="dogAge">Preferred Dog Age:</label>
+                <select id="dogAge" name="dogAge" required>
+                    <option value="">Select Age</option>
+                    <option value="Puppy">Puppy</option>
+                    <option value="Young Adult">Young Adult</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+
+            <!-- Care Commitment Section -->
+            <div class="form-section">
+                <h2>Care Commitment</h2>
+                <label for="dogCare">Why do you want to adopt a dog?</label>
+                <textarea id="dogCare" name="dogCare" rows="4" required></textarea>
+                
+                <label for="livingSituation">Do you own your home or rent?</label>
+                <select id="livingSituation" name="livingSituation" required>
+                    <option value="">Select One</option>
+                    <option value="Own">Own</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="dogExercise">How do you plan to provide exercise and enrichment for the dog?</label>
+                <textarea id="dogExercise" name="dogExercise" rows="4" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-section">
+                <input type="submit" value="Submit Adoption Interest">
+            </div>
+        </form>
+    </div>
+			
+			
+			
+			
+			</section>
+		
+			
+			
+			
+	 
+	 
+	 
+	</body>
+</html>
+		
