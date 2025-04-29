@@ -215,7 +215,7 @@ h1, h2, h5 {
     background-color: #606c3825;
 }
 
-.fa-paw, .fa-heart {
+.fas {
     color: var(--tiger-eye);
 }
 
