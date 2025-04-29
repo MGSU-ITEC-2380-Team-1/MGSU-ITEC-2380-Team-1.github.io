@@ -255,7 +255,7 @@ h1, h2, h5 {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .timeline-badge {
@@ -273,9 +273,9 @@ h1, h2, h5 {
 
 .timeline-panel {
     position: relative;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 0.25rem;
-    background-color: white;
+    background-color: rgba(221, 161, 94, 0.05);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border: 1px solid;
     border-color: var(--tiger-eye);
@@ -331,35 +331,202 @@ h1, h2, h5 {
     }
 }
 
-/* Adopt Page Specific Styles */
-.adopt-intro-text {
-    color: var(--cornsilk)!important;
+/* ===== Adoption Page Specific Styles ===== */
+/* Application Process Steps */
+.step {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-    background-color: #2ecc71;
+.step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    border: 3px solid var(--cornsilk);
+    box-shadow: 0 0 0 2px var(--tiger-eye);
 }
 
-input[type="submit"]:hover {
-    background-color: #27ae60;
+.step-text {
+    font-weight: 600;
+    color: var(--green-dark);
 }
 
-.form-section {
-    margin-bottom: 30px;
+/* Connector lines between steps */
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    right: -50%;
+    height: 3px;
+    background-color: var(--yellow-earth);
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .step {
+        padding-bottom: 30px;
+    }
+    .step:not(:last-child)::after {
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        width: 3px;
+        height: 30px;
+        transform: translateX(-50%);
+    }
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Form Styling Enhancements */
+#adoptionForm fieldset {
+    background-color: rgba(221, 161, 94, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(188, 108, 37, 0.2);
+}
+
+#adoptionForm legend {
+    width: auto;
+    padding: 0 1rem;
+    margin-left: -1rem;
+    font-family: 'Merriweather', serif;
+    color: var(--tiger-eye);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--green-dark);
+}
+
+.form-label.required::after {
+    content: '*';
+    color: var(--tiger-eye);
+    margin-left: 4px;
+}
+
+.form-control, .form-select {
+    border: 1px solid var(--yellow-earth);
+    padding: 0.5rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--tiger-eye);
+    box-shadow: 0 0 0 0.25rem rgba(188, 108, 37, 0.25);
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+}
+
+/* Checkbox/Radio Styling */
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.15em;
+    border: 2px solid var(--yellow-earth);
+}
+
+.form-check-input:checked {
+    background-color: var(--tiger-eye);
+    border-color: var(--tiger-eye);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(188, 108, 37, 0.25);
+    border-color: var(--tiger-eye);
+}
+
+/* FAQ Accordion Styling */
+#faqAccordion .accordion-button {
+    font-weight: 600;
+    color: var(--green-dark);
+    background-color: rgba(221, 161, 94, 0.1);
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    color: var(--tiger-eye);
+    background-color: rgba(221, 161, 94, 0.2);
+}
+
+#faqAccordion .accordion-body {
+    background-color: rgba(221, 161, 94, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    #adoptionForm fieldset {
+        padding: 1rem;
+    }
+    
+    .form-control, .form-select {
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Animation for form sections */
+fieldset {
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+fieldset:nth-child(1) { animation-delay: 0.1s; }
+fieldset:nth-child(2) { animation-delay: 0.2s; }
+fieldset:nth-child(3) { animation-delay: 0.3s; }
+fieldset:nth-child(4) { animation-delay: 0.4s; }
+fieldset:nth-child(5) { animation-delay: 0.5s; }
+
+.modal-content {
+    border: 2px solid var(--tiger-eye);
+}
+
+.modal-header {
+    background-color: var(--green-moss);
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1)!important;
+}
+
+.btn {
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.form-control, .form-select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.75em;
 }
 
 footer {
@@ -380,6 +547,10 @@ footer a {
     text-decoration: none;
 }
 
+.blockquote-footer {
+    background-color: transparent!important;
+}
+
 figcaption {
     margin-top: 0.5rem;
     font-size: 0.9rem;
@@ -389,6 +560,24 @@ figcaption {
 
 .animate-fade {
     animation: fadeInUp 1.2s ease-in-out both;
+}
+
+.img-size {
+    max-height: 55vh;
+    width: fit-content;
+}
+
+.card-img-bg {
+    background-color: var(--green-dark);
+    border-radius: .375rem .375rem 0 0
+}
+
+.border-rad-left {
+    border-radius: .375rem 0 0 .375rem;
+}
+
+.border-rad-none {
+    border-radius: 0;
 }
 
 @keyframes fadeInUp {
