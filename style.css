@@ -215,8 +215,8 @@ h1, h2, h5 {
     background-color: #606c3825;
 }
 
-.fas {
-    color: var(--tiger-eye);
+.fas, .far {
+    color: var(--tiger-eye)!important;
 }
 
 .tiger-border {
@@ -578,6 +578,10 @@ figcaption {
 
 .border-rad-none {
     border-radius: 0;
+}
+
+.displayNone {
+    display: none;
 }
 
 @keyframes fadeInUp {
