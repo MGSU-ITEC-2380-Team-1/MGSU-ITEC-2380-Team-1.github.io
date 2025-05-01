@@ -33,20 +33,20 @@
                             <li class="nav-item"><a href="adopt.html" class="nav-link active">Adopt</a></li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </div> <!-- Navbar List -->
+                </div> <!-- Navbar -->
             </nav>
         </header>
-        <!-- Hero Banner -->
+        <!-- Adopt Banner -->
         <section class="about-banner text-center d-flex flex-column justify-content-center align-items-center">
-            <div class="about-overlay"></div>
+            <div class="about-overlay"></div> <!--  -->
             <div class="about-content container animate-fade">
                 <h1 class="display-3 fw-bold">Service Animal Adoption</h1>
                 <p class="lead">Begin your journey to finding the perfect companion</p>
-            </div>
+            </div> <!-- Adopt Content -->
         </section>
         <main class="container my-5">
-            <!-- Application Progress -->
+            <!-- Application Procress -->
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="card tiger-border shadow-sm">
@@ -54,33 +54,33 @@
                             <h2 class="text-center mb-4">Application Process</h2>
                             <div class="d-flex flex-column flex-md-row justify-content-between text-center">
                                 <div class="step mb-3 mb-md-0">
-                                    <div class="step-number bg-warning rounded-circle d-inline-flex align-items-center justify-content-center">1</div>
-                                    <div class="step-text mt-2">Complete Application</div>
-                                </div>
+                                    <div class="step-number bg-warning rounded-circle d-inline-flex align-items-center justify-content-center">1</div> <!--  -->
+                                    <div class="step-text mt-2">Complete Application</div> <!-- Complete Application Step Text -->
+                                </div> <!-- Complete Application Step -->
                                 <div class="step mb-3 mb-md-0">
-                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">2</div>
-                                    <div class="step-text mt-2">Initial Screening</div>
-                                </div>
+                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">2</div> <!--  -->
+                                    <div class="step-text mt-2">Initial Screening</div> <!-- Initial Screening Step Text -->
+                                </div> <!-- Initial Screening Step -->
                                 <div class="step mb-3 mb-md-0">
-                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">3</div>
-                                    <div class="step-text mt-2">Home Assessment</div>
-                                </div>
+                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">3</div> <!--  -->
+                                    <div class="step-text mt-2">Home Assessment</div> <!-- Home Assessment Step Text -->
+                                </div> <!-- Home Assessment Step -->
                                 <div class="step">
-                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">4</div>
-                                    <div class="step-text mt-2">Match & Training</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <div class="step-number bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center">4</div> <!--  -->
+                                    <div class="step-text mt-2">Match & Training</div> <!-- Match & Training Step Text -->
+                                </div> <!-- Match & Training Step -->
+                            </div> <!-- Application Process Steps Flex -->
+                        </div> <!-- Application Process Card Body -->
+                    </div> <!-- Application Process Card -->
+                </div> <!-- Application Process Column -->
+            </div> <!-- Application Process Row -->
             <!-- Application Form -->
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="card tiger-border shadow-sm">
                         <div class="card-header bg-success text-white">
                             <h2 class="mb-0">Service Animal Application Form</h2>
-                        </div>
+                        </div> <!--  -->
                         <div class="card-body">
                             <form id="adoptionForm" class="needs-validation" novalidate>
                                 <!-- Veteran Information Section -->
@@ -88,32 +88,31 @@
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-user-shield me-2"></i>Veteran Information</h3>
                                     </legend>
-                                    
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <label for="firstName" class="form-label">First Name*</label>
                                             <input type="text" class="form-control" id="firstName" required>
-                                            <div class="invalid-feedback">Please provide your first name</div>
-                                        </div>
+                                            <div class="invalid-feedback">Please provide your first name</div> <!-- First Name Invalid Feedback -->
+                                        </div> <!-- First Name Form Field -->
                                         <div class="col-md-6">
                                             <label for="lastName" class="form-label">Last Name*</label>
                                             <input type="text" class="form-control" id="lastName" required>
-                                            <div class="invalid-feedback">Please provide your last name</div>
-                                        </div>
+                                            <div class="invalid-feedback">Please provide your last name</div> <!-- Last Name Invalid Feedback -->
+                                        </div> <!-- Last Name Form Field -->
                                         <div class="col-md-6">
                                             <label for="email" class="form-label">Email*</label>
                                             <input type="email" class="form-control" id="email" required>
-                                            <div class="invalid-feedback">Please provide a valid email</div>
-                                        </div>
+                                            <div class="invalid-feedback">Please provide a valid email</div> <!-- Email Invalid Feedback -->
+                                        </div> <!-- Email Form Field -->
                                         <div class="col-md-6">
                                             <label for="phone" class="form-label">Phone*</label>
                                             <input type="tel" class="form-control" id="phone" required>
-                                            <div class="invalid-feedback">Please provide a phone number</div>
-                                        </div>
+                                            <div class="invalid-feedback">Please provide a phone number</div> <!-- Phone Invalid Feedback -->
+                                        </div> <!-- Phone Form Field -->
                                         <div class="col-md-6">
                                             <label for="dob" class="form-label">Date of Birth*</label>
                                             <input type="date" class="form-control" id="dob" required>
-                                        </div>
+                                        </div> <!-- DoB Form Field -->
                                         <div class="col-md-6">
                                             <label for="serviceBranch" class="form-label">Branch of Service*</label>
                                             <select class="form-select" id="serviceBranch" required>
@@ -125,11 +124,11 @@
                                                 <option value="Coast Guard">Coast Guard</option>
                                                 <option value="National Guard">National Guard</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Service Branch Selection Form Field -->
                                         <div class="col-md-6">
                                             <label for="serviceYears" class="form-label">Years of Service*</label>
                                             <input type="text" class="form-control" id="serviceYears" required>
-                                        </div>
+                                        </div> <!-- Service Years Form Field -->
                                         <div class="col-md-6">
                                             <label for="dischargeStatus" class="form-label">Discharge Status*</label>
                                             <select class="form-select" id="dischargeStatus" required>
@@ -138,64 +137,60 @@
                                                 <option value="General">General</option>
                                                 <option value="Other">Other</option>
                                             </select>
-                                        </div>
-                                    </div>
+                                        </div> <!-- Discharge Status Form Field -->
+                                    </div> <!-- Veteran Info Row -->
                                 </fieldset>
                                 <!-- Disability Information Section -->
                                 <fieldset class="mb-5">
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-wheelchair me-2"></i>Disability Information</h3>
                                     </legend>
-                                    
                                     <div class="mb-3">
                                         <label class="form-label">Please select the type(s) of assistance needed:*</label>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="mobilityAssistance">
                                             <label class="form-check-label" for="mobilityAssistance">Mobility Assistance</label>
-                                        </div>
+                                        </div> <!-- Mobility Assistance Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="ptsdSupport">
                                             <label class="form-check-label" for="ptsdSupport">PTSD Support</label>
-                                        </div>
+                                        </div> <!-- PTSD Support Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="medicalAlert">
                                             <label class="form-check-label" for="medicalAlert">Medical Alert</label>
-                                        </div>
+                                        </div> <!-- Medical Alert Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="hearingAssistance">
                                             <label class="form-check-label" for="hearingAssistance">Hearing Assistance</label>
-                                        </div>
+                                        </div> <!-- Hearing Assistance Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="otherAssistance">
                                             <label class="form-check-label" for="otherAssistance">Other (please specify)</label>
                                             <input type="text" class="form-control mt-2 displayNone" id="otherAssistanceText">
                                             <label class="otherAssistanceText displayNone" for="otherAssistanceText">Specify your needed assistance</label>
-                                        </div>
-                                    </div>
-                                    
+                                        </div> <!-- Other Assistance Check -->
+                                    </div> <!-- Assistance Checks -->
                                     <div class="mb-3">
                                         <label for="disabilityDesc" class="form-label">Please describe how a service animal could assist you:*</label>
                                         <textarea class="form-control" id="disabilityDesc" rows="3" required></textarea>
-                                    </div>
-                                    
+                                    </div> <!-- Disability Assistance Description Form Field -->
                                     <div class="mb-3">
                                         <label class="form-label">Have you worked with a service animal before?*</label>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="prevExperience" id="prevExperienceYes" value="yes" required>
                                             <label class="form-check-label" for="prevExperienceYes">Yes</label>
-                                        </div>
+                                        </div> <!-- Worked With Service Animal Yes Radio -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="prevExperience" id="prevExperienceNo" value="no">
                                             <label class="form-check-label" for="prevExperienceNo">No</label>
-                                        </div>
-                                    </div>
+                                        </div> <!-- Worked With Service Animal No Radio -->
+                                    </div> <!-- Worked With Service Animal Form Field -->
                                 </fieldset>
                                 <!-- Animal Preferences Section -->
                                 <fieldset class="mb-5">
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-paw me-2"></i>Animal Preferences</h3>
                                     </legend>
-                                    
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <label for="prefSpecies" class="form-label">Preferred Species*</label>
@@ -205,11 +200,11 @@
                                                 <option value="Miniature Horse">Miniature Horse</option>
                                                 <option value="No Preference">No Preference</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Preferred Species Select Form Field -->
                                         <div class="col-md-6">
                                             <label for="prefBreed" class="form-label">Preferred Breed (if dog)</label>
                                             <input type="text" class="form-control" id="prefBreed">
-                                        </div>
+                                        </div> <!-- Preferred Breed Form Field -->
                                         <div class="col-md-6">
                                             <label for="prefSize" class="form-label">Preferred Size*</label>
                                             <select class="form-select" id="prefSize" required>
@@ -220,7 +215,7 @@
                                                 <option value="X-Large">X-Large (80+ lbs)</option>
                                                 <option value="No Preference">No Preference</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Preferred Size Form Field -->
                                         <div class="col-md-6">
                                             <label for="prefAge" class="form-label">Preferred Age*</label>
                                             <select class="form-select" id="prefAge" required>
@@ -231,19 +226,18 @@
                                                 <option value="Senior">Senior (7+ years)</option>
                                                 <option value="No Preference">No Preference</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Preferred Age Form Field -->
                                         <div class="col-12">
                                             <label for="prefReason" class="form-label">Please explain any specific preferences (allergies, past experiences, etc.)</label>
                                             <textarea class="form-control" id="prefReason" rows="2"></textarea>
-                                        </div>
-                                    </div>
+                                        </div> <!-- Specific Preferences Form Field -->
+                                    </div> <!-- Animal Preferences Row -->
                                 </fieldset>
                                 <!-- Living Situation Section -->
                                 <fieldset class="mb-5">
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-home me-2"></i>Living Situation</h3>
                                     </legend>
-                                    
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <label for="housingType" class="form-label">Type of Housing*</label>
@@ -255,7 +249,7 @@
                                                 <option value="Mobile Home">Mobile Home</option>
                                                 <option value="Other">Other</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Housing Type Form Field -->
                                         <div class="col-md-6">
                                             <label for="housingOwnership" class="form-label">Ownership Status*</label>
                                             <select class="form-select" id="housingOwnership" required>
@@ -264,12 +258,12 @@
                                                 <option value="Rent">Rent</option>
                                                 <option value="Military Housing">Military Housing</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Housing Ownership Status Form Field -->
                                         <div class="col-12" id="landlordInfo" style="display:none;">
                                             <label for="landlordContact" class="form-label">Landlord/Management Company Contact Information</label>
                                             <input type="text" class="form-control" id="landlordContact">
                                             <small class="text-muted">We may need to verify pet policies</small>
-                                        </div>
+                                        </div> <!-- Landloard Contact Form Field -->
                                         <div class="col-md-6">
                                             <label for="yardAccess" class="form-label">Access to Yard/Outdoor Space*</label>
                                             <select class="form-select" id="yardAccess" required>
@@ -278,7 +272,7 @@
                                                 <option value="Unfenced Yard">Unfenced Yard</option>
                                                 <option value="None">No Yard Access</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Yard Access Form Field -->
                                         <div class="col-md-6">
                                             <label for="hoursAlone" class="form-label">Hours animal would be alone daily*</label>
                                             <select class="form-select" id="hoursAlone" required>
@@ -288,60 +282,55 @@
                                                 <option value="4-6">4-6 hours</option>
                                                 <option value="6+">6+ hours</option>
                                             </select>
-                                        </div>
+                                        </div> <!-- Hours Alone Form Field -->
                                         <div class="col-12">
                                             <label for="householdMembers" class="form-label">Household Members (names, ages, relationship)*</label>
                                             <textarea class="form-control" id="householdMembers" rows="2" required></textarea>
-                                        </div>
+                                        </div> <!-- Household Members Form Field -->
                                         <div class="col-12">
                                             <label for="otherPets" class="form-label">Other Pets in Household (type, age, temperament)</label>
                                             <textarea class="form-control" id="otherPets" rows="2"></textarea>
-                                        </div>
-                                    </div>
+                                        </div> <!-- Other Pets Form Field -->
+                                    </div> <!-- Living Situation Row -->
                                 </fieldset>
                                 <!-- Care & Training Section -->
                                 <fieldset class="mb-5">
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-heart me-2"></i>Care & Training Commitment</h3>
                                     </legend>
-                                    
                                     <div class="mb-3">
                                         <label for="dailyRoutine" class="form-label">Describe your typical daily routine*</label>
                                         <textarea class="form-control" id="dailyRoutine" rows="3" required></textarea>
-                                    </div>
-                                    
+                                    </div> <!-- Daily Routine Form Field -->
                                     <div class="mb-3">
                                         <label for="exercisePlan" class="form-label">How will you provide exercise and mental stimulation?*</label>
                                         <textarea class="form-control" id="exercisePlan" rows="3" required></textarea>
-                                    </div>
-                                    
+                                    </div> <!-- Exercise Form Field -->
                                     <div class="mb-3">
                                         <label class="form-label">Are you able to commit to:*</label>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="commitTraining" required>
                                             <label class="form-check-label" for="commitTraining">2-4 weeks of team training with your service animal</label>
-                                        </div>
+                                        </div> <!-- Training Form Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="commitVet" required>
                                             <label class="form-check-label" for="commitVet">Annual veterinary care and emergency medical needs</label>
-                                        </div>
+                                        </div> <!-- Veterinary Form Check -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="commitFollowup" required>
                                             <label class="form-check-label" for="commitFollowup">Follow-up training sessions as needed</label>
-                                        </div>
-                                    </div>
-                                    
+                                        </div> <!-- Followups Form Check -->
+                                    </div> <!-- Commitment Form Fields -->
                                     <div class="mb-3">
                                         <label for="financialPlan" class="form-label">How will you cover ongoing costs (food, vet care, supplies)?*</label>
                                         <textarea class="form-control" id="financialPlan" rows="2" required></textarea>
-                                    </div>
+                                    </div> <!-- Financial Plan Form Field -->
                                 </fieldset>
                                 <!-- Additional Information -->
                                 <fieldset class="mb-4">
                                     <legend class="border-bottom pb-2 mb-4">
                                         <h3><i class="fas fa-info-circle me-2"></i>Additional Information</h3>
                                     </legend>
-                                    
                                     <div class="mb-3">
                                         <label for="howHear" class="form-label">How did you hear about us?</label>
                                         <select class="form-select" id="howHear">
@@ -352,40 +341,36 @@
                                             <option value="Friend/Family">Friend/Family</option>
                                             <option value="Other">Other</option>
                                         </select>
-                                    </div>
-                                    
+                                    </div> <!-- How Did You Hear About Us Form Field -->
                                     <div class="mb-3">
                                         <label for="additionalInfo" class="form-label">Anything else we should know?</label>
                                         <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
-                                    </div>
-                                    
+                                    </div> <!-- Additional Info Form Field -->
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" id="consentContact" required>
                                         <label class="form-check-label" for="consentContact">I consent to being contacted by Thank You, Fur Your Service regarding my application*</label>
-                                    </div>
-                                    
+                                    </div> <!-- App Consent Check -->
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" id="consentInfo" required>
                                         <label class="form-check-label" for="consentInfo">I certify that the information provided is true and complete*</label>
-                                    </div>
+                                    </div> <!-- Certification Check -->
                                 </fieldset>
-
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-5">
                                     <button type="reset" class="btn btn-outline-secondary me-md-2 px-4">Reset Form</button>
                                     <button type="submit" class="btn btn-warning px-4">Submit Application</button>
-                                </div>
+                                </div> <!-- Reset and Submit Buttons Application -->
                             </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> <!-- Application Form Card Body -->
+                    </div> <!-- Application Form Card -->
+                </div> <!-- Application Form Column -->
+            </div> <!-- Application Form Row -->
             <!-- FAQ Accordion -->
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-10">
                     <div class="card tiger-border shadow-sm">
                         <div class="card-header bg-success text-white">
                             <h2 class="mb-0">Adoption Process FAQs</h2>
-                        </div>
+                        </div> <!-- Adopt FAQs Card Header -->
                         <div class="card-body">
                             <div class="accordion" id="faqAccordion">
                                 <div class="accordion-item border-0 shadow-sm mb-3">
@@ -397,9 +382,9 @@
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                         <div class="accordion-body">
                                             The entire process typically takes 3-6 months from application to placement. This includes application review, interviews, home assessment, matching, and training.
-                                        </div>
-                                    </div>
-                                </div>
+                                        </div> <!-- Adopt FAQs Accordion Body 1 -->
+                                    </div> <!-- Adopt FAQs Accordion Collapse 1 -->
+                                </div> <!--  Adopt FAQs Accordion Item 1 -->
                                 <div class="accordion-item border-0 shadow-sm mb-3">
                                     <h3 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -409,9 +394,9 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                         <div class="accordion-body">
                                             While we provide the service animal at no cost, adopters are responsible for ongoing care including food, veterinary expenses, and equipment. We can provide resources for financial assistance if needed.
-                                        </div>
-                                    </div>
-                                </div>
+                                        </div> <!-- Adopt FAQs Accordion Body 2 -->
+                                    </div> <!-- Adopt FAQs Accordion Collapse 2 -->
+                                </div> <!-- Adopt FAQs Accordion Item 2 -->
                                 <div class="accordion-item border-0 shadow-sm">
                                     <h3 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -421,25 +406,23 @@
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                         <div class="accordion-body">
                                             Our adoption contract requires that if you can no longer care for the animal, it must be returned to our organization. We will work to find an appropriate new placement.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                        </div> <!-- Adopt FAQs Accordion Body 3 -->
+                                    </div> <!-- Adopt FAQs Accordion Collapse 3 -->
+                                </div> <!-- Adopt FAQs Accordion Item 3 -->
+                            </div> <!-- Adopt FAQs Accordion -->
+                        </div> <!-- Adopt FAQs Card Body -->
+                    </div> <!-- Adopt FAQs Card -->
+                </div> <!-- Adopt FAQs Accordion Column -->
+            </div> <!-- Adopt FAQs Accordion Row -->
         </main>
-
         <!-- Success Stories CTA -->
         <section class="bg-success text-white py-5 mt-5">
             <div class="container text-center">
                 <h2 class="mb-3">Not Sure If You're Ready?</h2>
                 <p class="lead mb-4">Read stories from veterans who found life-changing companions through our program.</p>
                 <a href="stories.html" class="btn btn-lg btn-warning px-4">View Success Stories</a>
-            </div>
+            </div> <!-- Veteran Stories Link -->
         </section>
-
         <footer class="footer text-light py-4">
             <div class="container text-center">
                 <p class="mb-1">Located in Warner Robins, GA | (478) 123-4567 | info@furservice.org</p>
@@ -448,9 +431,9 @@
                     <a href="#" class="text-light mx-2" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                     <a href="#" class="text-light mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="text-light mx-2" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
+                </div> <!-- Footer Social Links -->
                 <p class="mt-3 mb-0">&copy; 2025 Thank You, Fur Your Service. All rights reserved.</p>
-            </div>
+            </div> <!-- Footer Content -->
         </footer>
         <!-- Custom Form Validation Script -->
         <script>
